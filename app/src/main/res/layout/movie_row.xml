@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="13dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton
+        android:id="@+id/movieImage"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="10dp" />
+    <LinearLayout
+        android:id="@+id/movieData"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        app:layout_constraintRight_toLeftOf="@id/totalAverage"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/movieTitle"
+            android:text="title"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/movieReleaseDate"
+            android:text="5/5/2010"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/movieDescription"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="mmklnkdl;vknj dvjdb kjvndkn;llddlllk"
+            android:layout_width="220dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="100dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/totalAverage"
+        android:text="7.5"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
